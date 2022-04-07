@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="content-queries.css">
+        
+        <style>
+            
+            .container {
+                display:grid;
+                grid-template-columns:1fr;
+                grid-auto-rows:minmax(30px, auto);
+                grid-template-areas: 
+                    "header"
+                    "nav"
+                    "socials"
+                    "search"
+                    "cart"
+                    "section1"
+                    "section2"
+                    "section3"
+                    "footer-social"
+                    "footer-contact"
+                    "footer-links";
+            }         
+            
+            header {
+                grid-area:header;
+            }
+            
+            nav {
+                grid-area:nav;
+            }
+            
+            .socials {
+                grid-area:socials;
+            }
+            
+            .search {
+                grid-area:search;
+            }
+            
+            .cart {
+                grid-area:cart;
+            }
+            
+            .section1 {
+                grid-area:section1;
+                align-content: center;
+                align-items: center;   
+            }
+            
+            .section2 {
+                grid-area:section2;
+            }
+            
+            .section3 {
+                grid-area:section3;
+            }
+            
+            .footer-social {
+                grid-area:footer-social;
+            }
+            
+            .footer-contact {
+                grid-area:footer-contact;
+            }
+            
+            .footer-links {
+                grid-area:footer-links;
+            }
+            
+ 
+/* FOR TABLETS BELOW */
+            
+@media only screen and (min-width:620px) {
+    
+            .container {
+            display:grid;
+            grid-template-columns:repeat(6, 1fr);
+            grid-auto-rows:minmax(30px, auto);
+            grid-template-areas: 
+                 "header header nav nav nav nav"
+                 "search search search search search search"
+                 "socials socials socials cart cart cart"
+                 "section1 section1 section1 section1 section1 section1"
+                 "section2 section2 section2 section2 section2 section2"
+                 "section3 section3 section3 section3 section3 section3"
+                 "footer-social footer-social footer-contact footer-contact footer-links footer-links";
+            }
+}
+            
+/* FOR LAPTOPS AND DESKTOPS */
+            
+@media only screen and (min-width:900px) {
+    
+            .container {
+            display:grid;
+            grid-template-columns:repeat(6, 1fr);
+            grid-auto-rows:minmax(50px, auto);
+            grid-template-areas: 
+                "header header nav nav nav nav"
+                "socials socials search search cart cart"
+                "section1 section1 section1 section1 section1 section1"
+                "section2 section2 section2 section3 section3 section3"
+                "footer-social footer-social footer-contact footer-contact footer-links footer-links";  
+            }
+}           
+
+            #lemons {
+                background-image:url(images/graphics/lemon-loop.mp4);
+                right: 0;
+                bottom: 0;
+                max-width: 100%;
+                height: auto;
+                background-position: center;
+                background-size: cover;
+                display:grid;
+                justify-items:center;
+                align-items:center;
+                position:relative;
+                background-size:cover;
+            }
+            
+            .section2 {
+                background-size: auto; padding: 50px;
+                background-size:cover;
+                border: 10px;
+                background-color:#333;
+                background-image:url(images/products/lemonade-glass.jpg) ;
+                text-align: center;
+                padding-top: 200px;
+                padding-bottom: 200px;
+                border:20px solid #455;
+            }
+            
+            .section2 h1 {
+                background: rgba(600, 800, 520, 0.7);
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            
+            .section3 {
+                background-size: auto; padding: 50px;
+                background-size:cover;
+                background-color:#333;
+                background-image:url(images/graphics/lemons-closeup.jpg) ;
+                text-align: center;
+                padding-top: 200px;
+                padding-bottom: 200px;
+                border:20px solid #455;
+            }
+            
+            .section3 h1 {
+                background: rgba(600, 800, 520, 0.7);
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            
+            .product-link {
+                text-decoration: none;
+                color:#000;
+            }
+            
+            .service-link {
+                text-decoration: none;
+                color:#000;
+            }
+
+</style>
+        
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img class="logo" src="images/graphics/lemonade-cartel-logo.png" alt="logo"> 
+            </header>
+            
+            <nav>
+                <div><a href="index.html"><h2 class="nav-backbox">Home</h2></a></div>
+                <div><a href="products.html"><h2 class="nav-backbox">Products</h2></a></div>
+                <div><a href="services.html"><h2 class="nav-backbox">Services</h2></a></div>
+                <div><a href="policy.html"><h2 class="nav-backbox">Privacy</h2></a></div>
+            </nav>
+            
+            <div class="socials">
+                <a href="https://www.facebook.com/noah.mills.1612" target="_blank" rel="noopener noreferrer">
+                    <img alt="Facebook Logo" src="images/graphics/facebook-logo.webp"></a>
+                    
+                <a href="https://www.instagram.com/_atomous_/" target="_blank" rel="noopener noreferrer">
+                    <img alt="Instagram Logo" src="images/graphics/instagram-logo.png"></a>
+                    
+                <a href="https://www.youtube.com/channel/UCFoZy-8cejvcTcvUxXE_LUw" target="_blank" rel="noopener noreferrer">
+                    <img alt="YouTube Logo" src="images/graphics/youtube-logo.webp"></a>
+            </div>
+            
+            <div class="search">
+                <input type="text" placeholder="Search..">
+            </div>
+            
+            <div class="cart">
+                <div><a href="https://carts4u.com/standard-grocery-shopping-cart-200" target="_blank">
+                <img src="images/graphics/cart.png" width="50" height="50" alt="cart"></a></div><div><p><b>Cart</b></p></div>
+            </div>
+            
+            <div class="section1">
+                <div class="video-container">
+                    <video autoplay muted loop id="lemons">
+                        <source src="images/graphics/lemon-loop.mp4" type="video/mp4">
+                    </video>
+                    
+                    <div class="content">
+                        <h1>Welcome to the Lemonade Cartel!</h1>
+                    
+                            <p>On this site you will find a variety of lemon products for purchase. You can find items for purchase in the products section and subscription services in the services section of the site. In addition to purchasing items you can view our privacy page, social media sites, and also contact us. </p>
+                    
+                            <p>This site was created for those that love all things lemon. Thank you for visting the site and please feel free to reach out if you have any questions or run into any difficulty. </p>
+                    </div>               
+                </div>
+            </div>
+            
+            <div class="section2">
+                <div><a class="product-link" href="products.html"><h1 class="nav-backbox">Products</h1></a></div>
+            </div>
+            
+            <div class="section3">
+                <div><a class="service-link" href="services.html"><h1 class="nav-backbox">Services</h1></a></div>
+            </div>
+            
+
+                <div class="footer-social">
+                    <p>Social Media:</p>
+                    <div>
+                        <a href="https://www.facebook.com/noah.mills.1612" target="_blank" rel="noopener noreferrer">
+                        <img alt="Facebook Logo" src="images/graphics/facebook-logo.webp"></a>
+                    </div>
+                    
+                    <div>
+                        <a href="https://www.instagram.com/_atomous_/" target="_blank" rel="noopener noreferrer">
+                        <img alt="Instagram Logo" src="images/graphics/instagram-logo.png"></a>
+                    </div>
+                    
+                    <div>
+                        <a href="https://www.youtube.com/channel/UCFoZy-8cejvcTcvUxXE_LUw" target="_blank" rel="noopener noreferrer">
+                        <img alt="YouTube Logo" src="images/graphics/youtube-logo.webp"></a>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <p>Contact:</p>
+                    <ul>
+                        <li>Email: lemonadecartel420@gmail.com</li>
+                        <li>Phone: 202-555-0122</li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <p>Quick Links:</p>
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/Lemon" target="_blank" rel="noopener noreferrer">Lemon Facts</a></li>
+                        <li><a href="https://www.healthline.com/nutrition/6-lemon-health-benefits" target="_blank" rel="noopener noreferrer">Lemon Health</a></li>
+                    </ul>
+                </div>
+            
+      </div>
+    </body>
+</html> 

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Privacy Policy</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        
+        <style>
+            
+            .container {
+                display:grid;
+                grid-template-columns:1fr;
+                grid-auto-rows:minmax(30px, auto);
+                background-color: #fff;
+                color:#000;
+                grid-template-areas: 
+                    "header"
+                    "nav"
+                    "socials"
+                    "search"
+                    "cart"
+                    "privacy-policy"
+                    "notice"
+                    "choice"
+                    "access"
+                    "security"
+                    "contact-info"
+                    "date"
+                    "footer-social"
+                    "footer-contact"
+                    "footer-links";
+            }         
+            
+            header {
+                grid-area:header;
+            }
+            
+            nav {
+                grid-area:nav;
+            }
+            
+            .socials {
+                grid-area:socials;
+            }
+            
+            .search {
+                grid-area:search;
+            }
+            
+            .cart {
+                grid-area:cart;
+            }
+            
+            .privacy-policy {
+                grid-area:privacy-policy;
+            }
+            
+            .notice {
+                grid-area:notice;  
+            }
+            
+            .choice {
+                grid-area:choice;  
+            }
+            
+            .access {
+                grid-area:access;  
+            }
+            
+            .security {
+                grid-area:security;  
+            }
+            
+            .contact-info {
+                grid-area:contact-info;  
+            }
+            
+            .date {
+                grid-area:date;  
+            }
+            
+            .footer-social {
+                grid-area:footer-social;
+            }
+            
+            .footer-contact {
+                grid-area:footer-contact;
+            }
+            
+            .footer-links {
+                grid-area:footer-links;
+            }
+            
+            .privacy-policy {
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-top: 25px;
+            }
+            
+            .notice {
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-top: 25px;
+            }
+            
+            .choice {
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-top: 25px;
+            }
+            
+            .access {
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-top: 25px;
+            }
+            
+            .security {
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-top: 25px;
+            }
+            
+            .contact-info {
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-top: 25px;
+            }
+            
+            .date {
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-top: 25px;
+                padding-bottom: 25px;
+            }
+            
+            
+ 
+/* FOR TABLETS BELOW */
+            
+@media only screen and (min-width:620px) {
+    
+            .container {
+            display:grid;
+            grid-template-columns:repeat(6, 1fr);
+            grid-auto-rows:minmax(30px, auto);
+            background-color: #fff;
+            color:#000;
+            grid-template-areas: 
+                 "header header nav nav nav nav"
+                 "search search search search search search"
+                 "socials socials socials cart cart cart"
+                 "privacy-policy privacy-policy privacy-policy privacy-policy privacy-policy privacy-policy"
+                 "notice notice notice notice notice notice"
+                 "choice choice choice choice choice choice"
+                 "access access access access access access"
+                 "security security security security security security"
+                 "contact-info contact-info contact-info contact-info contact-info contact-info"
+                 "date date date date date date"
+                 "footer-social footer-social footer-contact footer-contact footer-links footer-links";
+            }
+    
+            .privacy-policy {
+                margin-left: 50px;
+                margin-right: 250px;
+                margin-top: 25px;
+            }
+            
+            .notice {
+                margin-left: 50px;
+                margin-right: 250px;
+                margin-top: 25px;
+            }
+            
+            .choice {
+                margin-left: 50px;
+                margin-right: 250px;
+                margin-top: 25px;
+            }
+            
+            .access {
+                margin-left: 50px;
+                margin-right: 250px;
+                margin-top: 25px;
+            }
+            
+            .security {
+                margin-left: 50px;
+                margin-right: 250px;
+                margin-top: 25px;
+            }
+            
+            .contact-info {
+                margin-left: 50px;
+                margin-right: 250px;
+                margin-top: 25px;
+            }
+            
+            .date {
+                margin-left: 50px;
+                margin-right: 250px;
+                margin-top: 25px;
+                padding-bottom: 25px;
+            }
+}
+            
+/* FOR LAPTOPS AND DESKTOPS */
+            
+@media only screen and (min-width:900px) {
+    
+            .container {
+            display:grid;
+            grid-template-columns:repeat(6, 1fr);
+            grid-auto-rows:minmax(50px, auto);
+            background-color: #fff;
+            color:#000;
+            grid-template-areas: 
+                 "header header nav nav nav nav"
+                 "socials socials search search cart cart"
+                 "privacy-policy privacy-policy privacy-policy privacy-policy privacy-policy privacy-policy"
+                 "notice notice notice notice notice notice"
+                 "choice choice choice choice choice choice"
+                 "access access access access access access"
+                 "security security security security security security"
+                 "contact-info contact-info contact-info contact-info contact-info contact-info"
+                 "date date date date date date"
+                 "footer-social footer-social footer-contact footer-contact footer-links footer-links";  
+            }
+    
+            .privacy-policy {
+                margin-left: 50px;
+                margin-right: 400px;
+                margin-top: 25px;
+            }
+            
+            .notice {
+                margin-left: 50px;
+                margin-right: 400px;
+                margin-top: 25px;
+            }
+            
+            .choice {
+                margin-left: 50px;
+                margin-right: 400px;
+                margin-top: 25px;
+            }
+            
+            .access {
+                margin-left: 50px;
+                margin-right: 400px;
+                margin-top: 25px;
+            }
+            
+            .security {
+                margin-left: 50px;
+                margin-right: 400px;
+                margin-top: 25px;
+            }
+            
+            .contact-info {
+                margin-left: 50px;
+                margin-right: 400px;
+                margin-top: 25px;
+            }
+            
+            .date {
+                margin-left: 50px;
+                margin-right: 400px;
+                margin-top: 25px;
+                padding-bottom: 25px;
+            }
+}
+            
+@media only screen and (min-width:1200px) {
+    
+            .privacy-policy {
+                margin-left: 50px;
+                margin-right: 700px;
+                margin-top: 25px;
+            }
+            
+            .notice {
+                margin-left: 50px;
+                margin-right: 700px;
+                margin-top: 25px;
+            }
+            
+            .choice {
+                margin-left: 50px;
+                margin-right: 700px;
+                margin-top: 25px;
+            }
+            
+            .access {
+                margin-left: 50px;
+                margin-right: 700px;
+                margin-top: 25px;
+            }
+            
+            .security {
+                margin-left: 50px;
+                margin-right: 700px;
+                margin-top: 25px;
+            }
+            
+            .contact-info {
+                margin-left: 50px;
+                margin-right: 700px;
+                margin-top: 25px;
+            }
+            
+            .date {
+                margin-left: 50px;
+                margin-right: 700px;
+                margin-top: 25px;
+                padding-bottom: 25px;
+            }
+    
+}
+            
+@media only screen and (min-width:1500px) {
+    
+            .privacy-policy {
+                margin-left: 50px;
+                margin-right: 900px;
+                margin-top: 25px;
+            }
+            
+            .notice {
+                margin-left: 50px;
+                margin-right: 900px;
+                margin-top: 25px;
+            }
+            
+            .choice {
+                margin-left: 50px;
+                margin-right: 900px;
+                margin-top: 25px;
+            }
+            
+            .access {
+                margin-left: 50px;
+                margin-right: 900px;
+                margin-top: 25px;
+            }
+            
+            .security {
+                margin-left: 50px;
+                margin-right: 900px;
+                margin-top: 25px;
+            }
+            
+            .contact-info {
+                margin-left: 50px;
+                margin-right: 900px;
+                margin-top: 25px;
+            }
+            
+            .date {
+                margin-left: 50px;
+                margin-right: 900px;
+                margin-top: 25px;
+                padding-bottom: 25px;
+            }
+    
+}
+            
+
+            #lemons {
+                background-image:url(images/lemon-loop.mp4);
+                right: 0;
+                bottom: 0;
+                max-width: 100%;
+                height: auto;
+                background-position: center;
+                background-size: cover;
+                display:grid;
+                justify-items:center;
+                align-items:center;
+                position:relative;
+                background-size:cover;
+            }
+
+            p {
+                display:inline-block;
+                line-height: 20px;
+                font-size: 18px;
+            }
+            
+            ul {
+                line-height: 20px;
+                font-size: 18px;
+            }
+            
+</style>
+        
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img class="logo" src="images/graphics/lemonade-cartel-logo.png" alt="logo">  
+            </header>
+            
+            <nav>
+                <div><a href="index.html"><h2 class="nav-backbox">Home</h2></a></div>
+                <div><a href="products.html"><h2 class="nav-backbox">Products</h2></a></div>
+                <div><a href="services.html"><h2 class="nav-backbox">Services</h2></a></div>
+                <div><a href="policy.html"><h2 class="nav-backbox">Privacy</h2></a></div>
+            </nav>
+            
+            <div class="socials">
+                <a href="https://www.facebook.com/noah.mills.1612" target="_blank" rel="noopener noreferrer">
+                    <img alt="Facebook Logo" src="images/graphics/facebook-logo.webp"></a>
+                    
+                <a href="https://www.instagram.com/_atomous_/" target="_blank" rel="noopener noreferrer">
+                    <img alt="Instagram Logo" src="images/graphics/instagram-logo.png"></a>
+                    
+                <a href="https://www.youtube.com/channel/UCFoZy-8cejvcTcvUxXE_LUw" target="_blank" rel="noopener noreferrer">
+                    <img alt="YouTube Logo" src="images/graphics/youtube-logo.webp"></a>
+            </div>
+            
+            <div class="search">
+                <input type="text" placeholder="Search..">
+            </div>
+            
+            <div class="cart">
+                <div><a href="https://carts4u.com/standard-grocery-shopping-cart-200" target="_blank">
+                <img src="images/graphics/cart.png" width="50" height="50" alt="cart"></a></div><div><p><b>Cart</b></p></div>
+            </div>
+        
+            <div class="privacy-policy">
+                <h1>Privacy Policy:</h1>
+                <p>This Privacy Policy lists the 'Lemonade Cartel's' policies, procedures, and conditions on the collection, use, and disclosure of user data and information.</p>
+
+                <p>The Lemonade Cartel utilizes personal data to sell items, communicate with customers about their orders/subscriptions, and to keep our users informed. By using the service, you as the user agree to the collection and use of information in accordance with this Privacy Policy.</p>
+            </div>
+            
+            <div class="notice">
+                <h2>Notice:</h2>
+                <p>The Lemonade Cartel collects all of the following personal information from customers who purchase a product and/or service:</p>
+                <ul>
+                    <li>Name</li>
+                    <li>Country, State/Province, Zipcode, City</li>
+                    <li>Phone Number</li>
+                    <li>Email Address</li>
+                    <li>Billing Address</li>
+                    <li>Shipping Address</li>
+                    <li>Payment Information (Credit Card, Paypal, Venmo, etc.)</li>
+                </ul>
+                
+                <p>All customers are required/prompted to create a personal user account before purchasing. This account is neccesary so that we, the Lemonade Cartel, can reach out to you about your order status and regarding order and payment verification.</p>
+                
+                <p>The data collected is only used for business transactions between the Lemonade Cartel and it's users/customers, and for the Lemonade Cartel to correspond with it's users/customers about order and account updates.</p>
+                
+                <p>All personal data is stored in our secure private servers. Personal user information is never sold, distributed, nor farmed to third party organizations or companies.</p>
+                
+                <p>As of the date this policy was last revised, the Lemonade Cartel does not currently utilize any form of cookies to track user data. the Lemonade Cartel may at any time start utilizing cookies to help improve user's experience with our service. If the Lemonade Cartel begins at any point using cookies, all users will be notified about the change via email and asked whether or not they would still like to have an account.</p>
+            </div>
+            
+            <div class="choice">
+                <h2>Choice:</h2>
+                <p>All users have the freedom to cancel a subscription or service, and/or to unscribe from our Monthly Newsletter at any given time. The Lemonade Cartel will continue corresponance with it's users until the user states that they wish to longer receive email notfications or correspondance from the Lemonade Cartel</p>
+                
+                <p>All users privacy and personal information are respected, so as stated in the previous section, user information is never sold, distributed, nor farmed to third party organizations or companies.</p>
+            </div>
+            
+            <div class="access">
+                <h2>Access:</h2>
+                <p>All users are free and welcomed to contact the Lemonade Cartel at any time about the information we have collected. Users may also contact us about inaccuracies or errors in the information we have on record and how the user would like us to correct/change the info to reflect the most accurate information.</p>
+            </div>
+            
+            <div class="security">
+                <h2>Security:</h2>
+                <p>Your information, including personal data, is processed/stored at the The Lemonade Cartel's offices and servers.  In the event that the Lemonade Cartel expands it's servers, offices, and/or changes business location, the transfer of user data to a new server/location will occur.
+
+                Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.
+
+                The Lemonade Cartel treats all user data with the utmost care. During a data transfer the Lemonade Cartel will strive to ensure that your data is treated securely and in accordance with this Privacy Policy and that your personal data will not be distributed to any third party organizations.</p>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Contact Information:</h2>
+                
+                <p>You may contact the Lemonade Cartel at any time by our email and by our phone number.</p>
+                
+                <ul>
+                    <li>Email: lemonadecartel420@gmail.com</li>
+                    <li>Phone: 202-555-0122</li>
+                </ul>
+            </div>
+            
+            <div class="date">
+                <h2>Date:</h2>
+                <p>Privacy Policy Last Updated: April 18, 2021</p>
+                
+                <p>This Privacy Policy is an accordance with the Virginia Privacy Law Act 2021</p>
+            </div>
+            
+                <div class="footer-social">
+                    <p>Social Media:</p>
+                    <div>
+                        <a href="https://www.facebook.com/noah.mills.1612" target="_blank" rel="noopener noreferrer">
+                        <img alt="Facebook Logo" src="images/graphics/facebook-logo.webp"></a>
+                    </div>
+                    
+                    <div>
+                        <a href="https://www.instagram.com/_atomous_/" target="_blank" rel="noopener noreferrer">
+                        <img alt="Instagram Logo" src="images/graphics/instagram-logo.png"></a>
+                    </div>
+                    
+                    <div>
+                        <a href="https://www.youtube.com/channel/UCFoZy-8cejvcTcvUxXE_LUw" target="_blank" rel="noopener noreferrer">
+                        <img alt="YouTube Logo" src="images/graphics/youtube-logo.webp"></a>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <p>Contact:</p>
+                    <ul>
+                        <li>Email: lemonadecartel420@gmail.com</li>
+                        <li>Phone: 202-555-0122</li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <p>Quick Links:</p>
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/Lemon" target="_blank" rel="noopener noreferrer">Lemon Facts</a></li>
+                        <li><a href="https://www.healthline.com/nutrition/6-lemon-health-benefits" target="_blank" rel="noopener noreferrer">Lemon Health</a></li>
+                    </ul>
+                </div>
+            
+      </div>
+    </body>
+</html>  

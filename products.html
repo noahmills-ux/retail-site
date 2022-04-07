@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Products</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        
+        <style>
+            
+            .container {
+                display:grid;
+                grid-template-columns:1fr;
+                grid-auto-rows:minmax(30px, auto);
+                grid-template-areas: 
+                    "header"
+                    "nav"
+                    "socials"
+                    "search"
+                    "cart"
+                    "products"
+                    "section1"
+                    "section2"
+                    "section3"
+                    "section4"
+                    "section5"
+                    "section6"
+                    "footer-social"
+                    "footer-contact"
+                    "footer-links";
+            }         
+            
+            header {
+                grid-area:header;
+            }
+            
+            nav {
+                grid-area:nav;
+            }
+            
+            .socials {
+                grid-area:socials;
+            }
+            
+            .search {
+                grid-area:search;
+            }
+            
+            .cart {
+                grid-area:cart;
+            }
+            
+            .products {
+                grid-area:products;
+            }
+            
+            .section1 {
+                grid-area:section1;  
+            }
+            
+            .section2 {
+                grid-area:section2;
+            }
+            
+            .section3 {
+                grid-area:section3;
+            }
+            
+            .section4 {
+                grid-area:section4;  
+            }
+            
+            .section5 {
+                grid-area:section5;  
+            }
+            
+            .section6 {
+                grid-area:section6;  
+            }
+            
+            .footer-social {
+                grid-area:footer-social;
+            }
+            
+            .footer-contact {
+                grid-area:footer-contact;
+            }
+            
+            .footer-links {
+                grid-area:footer-links;
+            }
+            
+ 
+/* FOR TABLETS BELOW */
+            
+@media only screen and (min-width:620px) {
+    
+            .container {
+            display:grid;
+            grid-template-columns:repeat(6, 1fr);
+            grid-auto-rows:minmax(30px, auto);
+            grid-template-areas: 
+                 "header header nav nav nav nav"
+                 "search search search search search search"
+                 "socials socials socials cart cart cart"
+                 "products products products products products products"
+                 "section1 section1 section1 section2 section2 section2"
+                 "section3 section3 section3 section4 section4 section4"
+                 "section5 section5 section5 section6 section6 section6"
+                 "footer-social footer-social footer-contact footer-contact footer-links footer-links";
+            }
+}
+            
+/* FOR LAPTOPS AND DESKTOPS */
+            
+@media only screen and (min-width:900px) {
+    
+            .container {
+            display:grid;
+            grid-template-columns:repeat(6, 1fr);
+            grid-auto-rows:minmax(50px, auto);
+            grid-template-areas: 
+                "header header nav nav nav nav"
+                "socials socials search search cart cart"
+                "products products products products products products"
+                "section1 section1 section2 section2 section3 section3"
+                "section4 section4 section5 section5 section6 section6"
+                "footer-social footer-social footer-contact footer-contact footer-links footer-links";  
+            }
+}
+            
+
+            #lemons {
+                background-image:url(images/lemon-loop.mp4);
+                right: 0;
+                bottom: 0;
+                max-width: 100%;
+                height: auto;
+                background-position: center;
+                background-size: cover;
+                display:grid;
+                justify-items:center;
+                align-items:center;
+                position:relative;
+                background-size:cover;
+            }
+            
+            .products {
+                margin-top: 40px;
+                margin-right: 80px;
+                margin-left: 80px;
+                justify-items:center;
+                align-content: center;
+                align-items: center;
+                text-align: center;
+                background: rgba(600, 800, 520, 0.91);
+                color: #000;  
+            }
+            
+            .section1 {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .section2 {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .section3 {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .section4 {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .section5 {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            
+            .section6 {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            
+            .product-img {
+                max-width: 60%;
+                height: auto;
+                padding: 20px;
+                padding-top: 50px;
+                padding-bottom: 0px;
+            }
+            
+            h1 {
+                font-size: 45px;
+            } 
+
+</style>
+        
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img class="logo" src="images/graphics/lemonade-cartel-logo.png" alt="logo">  
+            </header>
+            
+            <nav>
+                <div><a href="index.html"><h2 class="nav-backbox">Home</h2></a></div>
+                <div><a href="products.html"><h2 class="nav-backbox">Products</h2></a></div>
+                <div><a href="services.html"><h2 class="nav-backbox">Services</h2></a></div>
+                <div><a href="policy.html"><h2 class="nav-backbox">Privacy</h2></a></div>
+            </nav>
+            
+            <div class="socials">
+                <a href="https://www.facebook.com/noah.mills.1612" target="_blank" rel="noopener noreferrer">
+                    <img alt="Facebook Logo" src="images/graphics/facebook-logo.webp"></a>
+                    
+                <a href="https://www.instagram.com/_atomous_/" target="_blank" rel="noopener noreferrer">
+                    <img alt="Instagram Logo" src="images/graphics/instagram-logo.png"></a>
+                    
+                <a href="https://www.youtube.com/channel/UCFoZy-8cejvcTcvUxXE_LUw" target="_blank" rel="noopener noreferrer">
+                    <img alt="YouTube Logo" src="images/graphics/youtube-logo.webp"></a>
+            </div>
+            
+            <div class="search">
+                <input type="text" placeholder="Search..">
+            </div>
+            
+            <div class="cart">
+                <div><a href="https://carts4u.com/standard-grocery-shopping-cart-200" target="_blank">
+                <img src="images/graphics/cart.png" width="50" height="50" alt="cart"></a></div><div><p><b>Cart</b></p></div>
+            </div>
+            
+            <div class="products">
+                <h1>PRODUCTS</h1>
+            </div>
+            
+            <div class="section1">
+                <div><img class="product-img" src="images/products/lemons.jpg" alt="Lemons"></div>
+                <div><p>Lemons - <b>$4.20</b></p></div>
+                
+                <div><img class="product-img" src="images/products/lemonade-mix.jpg" alt="Lemonade Mix"></div>
+                <div><p>Lemonade Mix - <b>$10,873.23</b></p></div>
+            </div>
+            
+            <div class="section2">
+                <div><img class="product-img" src="images/products/lemon-cake.jpg" alt="Lemon Cake"></div>
+                <div><p>Lemon Cake - <b>$0.03</b></p></div>
+                
+                <div><img class="product-img" src="images/products/lemon-juice.jpg" alt="Lemon Juice"></div>
+                <div><p>Lemon Juice - <b>$5.75</b></p></div>
+            </div>
+            
+            <div class="section3">
+                <div><img class="product-img" src="images/products/lemonade-gallon.jpg" alt="Lemonade Gallon"></div>
+                <div><p>Lemonade Gallon - <b>$9.99</b></p></div>
+                
+                <div><img class="product-img" src="images/products/lemon-donuts.jpg" alt="Lemon Donuts"></div>
+                <div><p>Lemon Donuts - <b>$6.90</b></p></div>
+            </div>
+            
+            <div class="section4">
+                <div><img class="product-img" src="images/products/hard-lemonade.jpeg" alt="Hard Lemonade"></div>
+                <div><p>Hard Lemonade (5%) - <b>$420.69</b></p></div>
+                
+                <div><img class="product-img" src="images/products/lemon-jam.jpg" alt="Lemon Jam"></div>
+                <div><p>Lemon Jam - <b>$5.25</b></p></div>
+            </div>
+            
+            <div class="section5">
+                <div><img class="product-img" src="images/products/dehydrated-lemons.jpg" alt="Dehydrated Lemons"></div>
+                <div><p>Dehydrated Lemons - <b>$69.25</b></p></div>
+                
+                <div><img class="product-img" src="images/products/lemon-syrup.jpg" alt="Lemon Syrup"></div>
+                <div><p>Lemon Syrup - <b>$3.45</b></p></div>
+            </div>
+            
+            <div class="section6">
+                <div><img class="product-img" src="images/products/lemon-soap.jpg" alt="Lemon Soap"></div>
+                <div><p>Lemon Soap - <b>$20.11</b></p></div>
+                
+                <div><img class="product-img" src="images/products/lemon-pepper.jpg" alt="Lemon Pepper"></div>
+                <div><p>Lemon Pepper - <b>$7.11</b></p></div>
+            </div>
+            
+
+                <div class="footer-social">
+                    <p>Social Media:</p>
+                    <div>
+                        <a href="https://www.facebook.com/noah.mills.1612" target="_blank" rel="noopener noreferrer">
+                        <img alt="Facebook Logo" src="images/graphics/facebook-logo.webp"></a>
+                    </div>
+                    
+                    <div>
+                        <a href="https://www.instagram.com/_atomous_/" target="_blank" rel="noopener noreferrer">
+                        <img alt="Instagram Logo" src="images/graphics/instagram-logo.png"></a>
+                    </div>
+                    
+                    <div>
+                        <a href="https://www.youtube.com/channel/UCFoZy-8cejvcTcvUxXE_LUw" target="_blank" rel="noopener noreferrer">
+                        <img alt="YouTube Logo" src="images/graphics/youtube-logo.webp"></a>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <p>Contact:</p>
+                    <ul>
+                        <li>Email: lemonadecartel420@gmail.com</li>
+                        <li>Phone: 202-555-0122</li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <p>Quick Links:</p>
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/Lemon" target="_blank" rel="noopener noreferrer">Lemon Facts</a></li>
+                        <li><a href="https://www.healthline.com/nutrition/6-lemon-health-benefits" target="_blank" rel="noopener noreferrer">Lemon Health</a></li>
+                    </ul>
+                </div>
+            
+      </div>
+    </body>
+</html>  
